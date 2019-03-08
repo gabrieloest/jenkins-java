@@ -25,7 +25,7 @@ public class SampleTest {
 	public void isGreaterTest() {
 		System.out.println("Test");
 		Sample tester = new Sample();
-		assertTrue("Num 1 is greater than Num 2", tester.isGreater(2, 3));
+		assertTrue(tester.isGreater(2, 3));
 	}
 
 	@AfterEach
