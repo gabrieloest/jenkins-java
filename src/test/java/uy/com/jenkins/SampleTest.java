@@ -2,20 +2,21 @@ package uy.com.jenkins;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 public class SampleTest {
 
-	@BeforeClass
+	@BeforeAll
 	public static void beforeClass() {
 		System.out.println("Before Class");
 	}
 
-	@Before
+	@BeforeEach
 	public void before() {
 		System.out.println("Before Test Case");
 	}
@@ -27,12 +28,12 @@ public class SampleTest {
 		assertTrue("Num 1 is greater than Num 2", tester.isGreater(2, 3));
 	}
 
-	@After
+	@AfterEach
 	public void after() {
 		System.out.println("After Test Case");
 	}
 
-	@AfterClass
+	@AfterAll
 	public static void afterClass() {
 		System.out.println("After Class");
 	}
