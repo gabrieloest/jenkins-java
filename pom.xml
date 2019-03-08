@@ -5,7 +5,7 @@
 	<artifactId>junit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Jenkins Java JUnit Example</name>
-	<description>Describes the basic usage Jenkins Java JUnit/description>
+	<description>Describes the basic usage Jenkins Java JUnit</description>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
